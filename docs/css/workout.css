@@ -1,0 +1,172 @@
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-content{
+    padding-bottom: 150px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#header > *{
+    height: 60px;
+}
+
+.buttonType1{
+    background-color: var(--nwgrey);
+    border: none;
+    border-radius: 60px;
+    width: 60px;
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+
+.buttonType1 img{
+    align-self: center;
+    justify-self: center;
+}
+
+#addExerciseButton{
+    background-color: var(--nwgrey);
+    font-size: 0.9em;
+    border: none;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+    color: white;
+}
+
+#addExerciseButton img{
+    padding-right: 10px;
+    width: 50px;
+    align-self: center;
+
+}
+
+.exercise{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--nwgrey);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 20px;
+    
+}
+
+.exerciseNameInput{
+    color: var(--nwgreen);
+    font-size: 1.2em;
+    background: none;
+    border: 0.1em solid white;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.exerciseNameInput::placeholder{
+    color: rgb(178, 178, 178);
+}
+
+.set{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setCount{
+    display: inline;
+    font-size: 0.9em;
+    width: 40px;
+}
+
+.addSetButton, .removeExerciseButton{
+    background-color: var(--nwgrey);
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+}
+
+.removeSetButton{
+    flex: 1;
+    flex-shrink: 0;
+    min-width: 90px;
+    max-width: 110px;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--nwgrey);
+    color: white;
+}
+
+
+.repInput, .weightInput{
+    flex-shrink: 1;
+    min-width: 0;
+    color: var(--nwgreen);
+    font-size: 0.9em;
+    background: none;
+    border: 0.1em solid white;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.repInput::placeholder, .weightInput::placeholder{
+    color: rgb(177, 177, 177);
+}
+
+#summary{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nwgrey);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 20px;
+
+}
+
+#summary div > *{
+    margin: 10px 0;
+}
+
+footer{
+    background-color: var(--nwgrey);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover{
+    color: var(--nwgreen);
+}

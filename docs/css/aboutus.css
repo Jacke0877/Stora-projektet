@@ -1,0 +1,55 @@
+/* Lägger sakerna i rätt ordning och centrerar dem */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Gör rätt storlek på loggan */
+#nwlogo{
+    width: 60vw;
+    max-width: 350px;
+}
+
+/* Main content håller rätt storlek och centerar text */
+#main-content{
+    max-width: 800px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 20px 0;
+}
+
+/* Ändrar textstorlek och margin */
+#main-content h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#main-content p{
+    margin: 15px;
+    line-height: 1.4;
+    
+}
+footer{
+    background-color: var(--nwgrey);
+    padding: 20px;
+    /* Positionerar den till absoluta botten så att den alltid syns */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* Tar upp hela bredden */
+    width: 100%;
+    height: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+}
+
+a:hover{
+    color: var(--nwgreen);
+}

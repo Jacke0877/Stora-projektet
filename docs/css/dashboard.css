@@ -1,0 +1,233 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Gör flexbox layout och gör den vertikal och säger att den alltid ska vara 100% av viewporten */
+#nwlogo{
+    align-self: center;
+    width: 60vw;
+    max-width: 350px;
+}
+
+/* Centrerar loggan och gör så att den är 60% av viewportbredden med en maxbredd på 350px */
+#nwslogan{
+    align-self: center;
+}
+
+/* Centrerar */
+#overviewboard{
+    margin: 5vw;
+}
+
+
+#overviewboard h3{
+    margin-left: 6vw;
+    font-size: 1.1em;
+}
+
+
+#statsboard{
+    background-color: var(--nwgrey);
+    padding: 6vw;
+    border-radius: 30px;
+}
+
+
+#statsboard ul li{
+    list-style: none;
+    font-weight: 400;
+    margin-top: 4vh;
+}
+
+
+#statsboard ul li:first-child{
+    margin-top: 0;
+}
+
+
+#statsboard ul h4{
+    display: inline;
+    padding-left: 2vw;
+    font-size: 0.9em;
+}
+
+
+#trainingprograms ul{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+/* Gör en horisontellt skrollbar lista */
+#trainingprograms ul li{
+    background-color: var(--nwgrey);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+#trainingprograms ul li:first-child{
+    margin-left: 6vw;
+}
+
+
+#trainingprograms ul li:last-child{
+    margin-right: 6vw;
+}
+
+
+#trainingprograms ul li img{
+    border-radius: 20px;
+}
+ 
+
+#navpanel{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sätter fast navpanelen till botten av viewporten och sätter de lika långt ifrån varandra */
+#navpanel button{
+    flex: 1;
+    height: 70px;
+    max-width: 183.33px;
+    border: none;
+    background-color: var(--nwgrey);
+    cursor: pointer;
+}
+/* Styla knapparna */
+#navpanel button:hover{
+    background-color: grey;
+}
+
+
+.navbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbutton img{
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+
+footer{
+    background-color: var(--nwgrey);
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 80px;
+    grid-area: footer;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover{
+    color: var(--nwgreen);
+}
+
+@media screen and (min-width: 550px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "logo ."
+        "slogan ."
+        "nav overview"
+        "nav training"
+        "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto 1fr auto;
+        min-height: 100vh;
+        height: auto;
+    }
+    /* Ändrar layouten för till en grid för bredare skärmare och definierar de olika areorna */
+    #nwlogo{
+        grid-area: logo;
+        align-self: center;
+        width: 20vw;
+        max-width: 350px;   
+        margin-left: 20px;
+    }
+    
+
+    #nwslogan{
+        grid-area: slogan;
+        align-self: center;
+        margin-left: 20px;
+    }
+   
+
+    #overviewboard{
+        grid-area: overview;
+    }
+    
+
+    #overviewboard h4{
+        font-size: 1.4em;
+    }
+    
+
+    #statsboard{
+        grid-area: stats;
+    }
+
+    #statsboard ul li h4{
+        font-size: 1.1em;
+    }
+    
+
+    #trainingprograms{
+        grid-area: training;
+        display: flex;
+        flex-direction:row;
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+        list-style: none;
+    }
+    #trainingprograms ul{
+        margin-bottom: 0;
+    }
+
+    #navpanel{
+        position:relative;
+        flex-direction: column;
+        margin-top: 50px;
+        max-height: 40px;
+        grid-area: nav;
+    }
+    #navpanel button{
+        max-width: unset;
+    }
+    footer{
+        margin-bottom: 80px;
+    }
+    
+}

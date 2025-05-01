@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- NW logo -->
+    <img id="nwlogo" src="../images/nwlogo.png" alt="Nordic Wellness Logo">
+    <p id="nwslogan">- Strong Together</p>
+    <div id="overviewboard">
+        <h3>Översikt</h3>
+        <div id="statsboard">
+            <ul>
+                <li><h4 class="stats-title">Antal pass:</h4><h4 class="stat">5</h4></li>
+                <li><h4 class="stats-title">Reps:</h4><h4 class="stat">614</h4></li>
+                <li><h4 class="stats-title">Sets:</h4><h4 class="stat">68</h4></li>
+            </ul>  
+        </div>
+    </div>
+
+    <div id="trainingprograms">
+        <ul>
+            <li>
+                <div class="programbox">
+                <img src="../images/muscular-guy.png" alt="Man i träningskläder">
+                <h4>Exempelprogram</h4>
+                </div>
+            </li>
+            <li>
+                <div class="programbox">
+                <img src="../images/muscular-guy.png" alt="Man i träningskläder">
+                <h4>Exempelprogram</h4>
+                </div>
+            </li>
+            <li>
+                <div class="programbox">
+                <img src="../images/muscular-guy.png" alt="Man i träningskläder">
+                <h4>Exempelprogram</h4>
+            </div>
+            </li>
+            <li>
+                <div class="programbox">
+                <img src="../images/muscular-guy.png" alt="Man i träningskläder">
+                <h4>Exempelprogram</h4>
+            </div>
+            </li>
+            <li>
+                <div class="programbox">
+                <img src="../images/muscular-guy.png" alt="Man i träningskläder">
+                <h4>Exempelprogram</h4>
+            </div>
+            </li>
+            <li>
+                <div class="programbox">
+                <img src="../images/muscular-guy.png" alt="Man i träningskläder">
+                <h4>Exempelprogram</h4>
+            </div>
+            </li>
+            
+        </ul>   
+    </div>
+
+    <div id="navpanel">
+        <button class="navbutton" onclick="redirectDashboard()">
+            <img src="../images/homeicon.png" alt="Hus">
+        </button>
+        <button class="navbutton" onclick="redirectWorkout()"><img src="../images/dumbbellicon.png" alt="Hantel"></button>
+        <button class="navbutton" onclick="redirectLogbook()"><img src="../images/bookicon.png" alt="Loggobx"></button>
+    </div>
+
+    <footer>
+        <p id="nwsloganfooter">- Strong Together</p>
+        <div class="footer-links">
+            <a href="../about us/">Om oss</a>
+            <a href="https://nordicwellness.se/kundservice/medlemsvillkor/">Villkor</a>
+            <a href="https://nordicwellness.se/vi-anvander-cookies/">Integritetspolicy</a>
+            <a href="https://nordicwellness.se/kontakta-oss/">Kontakta oss</a>
+        </div>
+        <p id="copyright">Nordic Wellness &copy; 2025</p>
+        <p id="version">Version 1.0.0</p>
+    </footer>
+    <script src="../js/scripts-dashboard.js"></script>
+</body>
+</html>

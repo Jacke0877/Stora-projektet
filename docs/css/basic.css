@@ -1,0 +1,32 @@
+/* Gör variabler för färgerna som används mest */
+:root{
+    --nwblack: #191919;
+    --nwgrey:#4a4a4a;
+    --nwgreen: #57da48;
+}
+
+/* Importerar font */
+.open-sans-osnw {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+/* Standardmargins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+/* Standard bakgrundsfärg */
+body{
+    background-color: var(--nwblack);
+    color: rgb(246, 245, 245);
+}
+

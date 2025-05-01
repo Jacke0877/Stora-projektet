@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/workout.css">
+    <title>Workout</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div id="header">
+                <button class="buttonType1" id="cancelWorkoutButton" onclick="redirectDashboard()"><img src="../images/cross.svg" alt="Cross icon"></button>
+                <button id="addExerciseButton"><img src="../images/plus.svg" alt="Add excercise" >Lägg till övning</button>
+                <button class="buttonType1" id="endWorkoutButton"><img src="../images/hook.svg" alt="Hook icon"></button>
+            </div>
+            <section id="exercisecontainer">
+            </section>
+            <section id="summary">
+                <h3>Sammanfattning</h3>
+                <div>
+                    <p><b>Totala Sets:</b> <span id="totalSets">0</span></p>
+                    <p><b>Totala Reps:</b> <span id="totalReps">0</span></p>
+                    <p><b>Total Vikt:</b> <span id="totalWeight">0</span></p>
+                </div>
+            </section>
+        </div>
+            <footer>
+                <p id="nwslogan">- Strong Together</p>
+                <div class="footer-links">
+                    <a href="https://nordicwellness.se/om-oss/">Om oss</a>
+                    <a href="https://nordicwellness.se/kundservice/medlemsvillkor/">Villkor</a>
+                    <a href="https://nordicwellness.se/vi-anvander-cookies/">Integritetspolicy</a>
+                    <a href="https://nordicwellness.se/kontakta-oss/">Kontakta oss</a>
+                </div>
+                <p id="copyright">Nordic Wellness &copy; 2025</p>
+                <p id="version">Version 1.0.0</p>
+            </footer>
+    </div>
+    <script src="../js/scripts-workout.js"></script>
+</body>
+</html>

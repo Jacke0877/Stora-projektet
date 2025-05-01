@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggbok</title>
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/logbook.css">
+</head>
+<body>
+    <img id="nwlogo" src="../images/nwlogo.png" alt="Nordic Wellness Logo">
+    <p id="nwslogan">- Strong Together</p>
+
+    <main>
+        <h3>Loggbok</h3>
+        <div class="searchbar">
+            <input type="text" name="search" id="search-field" placeholder="Sök träningspass">
+        </div>
+        <div class="dropdown" id="logbook-year-dropdown">
+            <div class="dropdownbutton">
+                <h4 class="dropdown-title">2025</h4>
+                <div>
+                    <p><b>42</b></p><p>workouts</p>
+                </div>
+                <div>
+                    <p><b>571</b></p><p>sets</p>
+                </div>
+                <div>
+                    <p><b>5392</b></p><p>reps</p>
+                </div>
+                <h5 class="dropdown-indicator">v</h5>
+            </div>
+        </div>
+        <div class="dropdown" id="logbook-month-dropdown">
+            <div class="dropdownbutton" id="logbook-march-dropdown">
+                <h4 class="dropdown-title">Mars</h4>
+                <div>
+                    <p><b>19</b></p><p>workouts</p>
+                </div>
+                <div>
+                    <p><b>266</b></p><p>sets</p>
+                </div>
+                <div>
+                    <p><b>2507</b></p><p>reps</p>
+                </div>
+                <h4 class="dropdown-indicator">v</h4>
+                
+            </div>
+            <div class="verticallist" id="logbook-workout-list-march">
+                <section class="workout-card">
+                    <h4>2025-03-01</h4>
+                    <h5>Benpass</h5>
+                    <ul>
+                        <li><h6>Benpress</h6></li>
+                        <li><h6>3x10</h6></li>
+                    </ul>
+                </section>
+                <section class="workout-card">
+                    <h4>2025-03-02</h4>
+                    <h5>Överkroppspass</h5>
+                    <ul>
+                        <li><h6>Bänk</h6></li>
+                        <li><h6>3x10</h6></li>
+                    </ul>
+                </section>
+                <section class="workout-card">
+                    <h4>2025-03-03</h4>
+                    <h5>Benpass</h5>
+                    <ul>
+                        <li><h6>Benpress</h6></li>
+                        <li><h6>3x10</h6></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="dropdownbutton" id="logbook-february-dropdown">
+                <h4 class="dropdown-title">Februari</h4>
+                <div>
+                    <p><b>14</b></p><p>workouts</p>
+                </div>
+                <div>
+                    <p><b>188</b></p><p>sets</p>
+                </div>
+                <div>
+                    <p><b>1759</b></p><p>reps</p>
+                </div>
+                <h4 class="dropdown-indicator">v</h4>
+            </div>
+            <div class="dropdownbutton" id="logbook-january-dropdown"> 
+                <h4 class="dropdown-title">Januari</h4>
+                <div>
+                    <p><b>9</b></p><p>workouts</p>
+                </div>
+                <div>
+                    <p><b>117</b></p><p>sets</p>
+                </div>
+                <div>
+                    <p><b>1126</b></p><p>reps</p>
+                </div>
+                <h4 class="dropdown-indicator">v</h4>
+            </div>
+        </div>
+        
+
+    </main>
+    <div id="navpanel">
+        <button class="navbutton" onclick="redirectDashboard()"><img src="../images/homeicon.png" alt="Hus"></button>
+        <button class="navbutton" onclick="redirectWorkout()"><img src="../images/dumbbellicon.png" alt="Hantel"></button>
+        <button class="navbutton" onclick="redirectLogbook()"><img src="../images/bookicon.png" alt="Loggobx"></button>
+    </div>
+
+    <script src="../js/scripts-logbook.js"></script>
+
+</body>
+</html>
